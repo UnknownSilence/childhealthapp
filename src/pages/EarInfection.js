@@ -9,7 +9,7 @@ import {
 import React from "react";
 import Emoji from "../components/Emoji";
 import { ReactComponent as EarPic } from "./earPic.svg";
-import { ReactComponent as VacPic } from "./vaccPic.svg";
+import { ReactComponent as SwimPic } from "./swimmer.svg";
 
 export default function EarInfection() {
   return (
@@ -34,19 +34,16 @@ export default function EarInfection() {
           <Typography sx={{ fontSize: 20 }} gutterBottom>
             <Typography variant="h6">
               {" "}
-              There are multiple types of ear infections.
+              There are multiple types of ear infections. One of these
+              infections, called swimmer's ear , are caused by bacterial in the
+              ear
+              <Emoji symbol="👂" />. It is called swimmer's ear because it is
+              mostly caused by the water that remains in the ear after swimming
+              <Emoji symbol="🏊" />.
             </Typography>
             <Typography variant="h6">&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
           </Typography>
-          <Typography variant="h6" component="div">
-            One of these infections, called swimmer's ear , are caused by
-            bacterial in the ear
-            <Emoji symbol="👂" />. It is called swimmer's ear because it is
-            mostly caused by the water that remains in the ear after swimming
-            <Emoji symbol="🏊" />.
-          </Typography>
-          <Typography variant="h6">&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
-          <Typography variant="h6" component="div">
+          <Typography variant="h6">
             Putting in ear drops
             <Emoji symbol="💧" /> can help swimmer's ear because it contains an
             antibiotic acid.
@@ -56,7 +53,7 @@ export default function EarInfection() {
         <CardActions>
           <a
             target="_blank"
-            href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/influenza/influenza-flu-in-children#:~:text=Influenza%20(flu)%20is%20a%20very,for%20less%20than%20a%20week."
+            href="https://kidshealth.org/en/parents/otitis-media.html"
           >
             <Button size="small">Learn More</Button>
           </a>
@@ -68,7 +65,7 @@ export default function EarInfection() {
         <Typography>&nbsp;</Typography>
       </Grid>
       <Grid item container display="flex" justify="center">
-        <VacPic></VacPic>
+        <SwimPic></SwimPic>
       </Grid>
       <Grid item container direction="column" display="flex" justify="center">
         <Typography>&nbsp;</Typography>
@@ -88,13 +85,38 @@ export default function EarInfection() {
         <CardActions>
           <a
             target="_blank"
-            href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/influenza/influenza-flu-in-children#:~:text=Influenza%20(flu)%20is%20a%20very,for%20less%20than%20a%20week."
+            href="https://kidshealth.org/en/parents/otitis-media.html"
           >
             <Button size="small">Learn More</Button>
           </a>
         </CardActions>
       </Card>
       <Typography variant="body1"></Typography>
+      <Grid item container direction="column" display="flex" justify="center">
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+      </Grid>
+      <Grid item container display="flex" justify="center">
+        <Typography variant="h3">Let's apply it!</Typography>
+      </Grid>
+      <Grid item container direction="column" display="flex" justify="center">
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+      </Grid>
+
+      <Grid item container direction="column" display="flex" justify="center">
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+      </Grid>
     </Grid>
   );
 }
