@@ -56,14 +56,20 @@ export default function Influenza() {
           </Typography>
           <Typography variant="h6">&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
         </CardContent>
-        <CardActions>
-          <a
+        <CardActions style={{justifyContent: "center"}}> 
+            <a
             target="_blank"
-            href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/influenza/influenza-flu-in-children#:~:text=Influenza%20(flu)%20is%20a%20very,for%20less%20than%20a%20week."
+            href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/influenza/influenza-flu-in-children#:~:text=Influenza%20(flu)%20is%20a%20very,for%20less%20than%20a%20week"
           >
-            <Button size="small">Learn More</Button>
+            <Button style={{
+              borderRadius: 10,
+              backgroundColor: "turquoise",
+              color: "white",
+              fontSize: "15px",
+            }}>Learn More</Button> 
+            
           </a>
-        </CardActions>
+          </CardActions> 
       </Card>
       <Grid item container direction="column" display="flex" justify="center">
         <Typography>&nbsp;</Typography>
@@ -92,14 +98,20 @@ export default function Influenza() {
             soup will help the body stay hydrated, which will better help it fight the illness. 
           </Typography>
         </CardContent>
-        <CardActions>
-          <a
+        <CardActions style={{justifyContent: "center"}}> 
+            <a
             target="_blank"
             href="https://www.webmd.com/cold-and-flu/coping-with-flu"
           >
-            <Button size="small">Learn More</Button>
+            <Button style={{
+              borderRadius: 10,
+              backgroundColor: "turquoise",
+              color: "white",
+              fontSize: "15px",
+            }}>Learn More</Button> 
+            
           </a>
-        </CardActions>
+          </CardActions>  
       </Card>
       <Typography variant="body1"></Typography>
       <Grid item container direction="column" display="flex" justify="center">

@@ -53,14 +53,20 @@ export default function EarInfection() {
           </Typography>
           <Typography variant="h6">&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
         </CardContent>
-        <CardActions>
-          <a
+        <CardActions style={{justifyContent: "center"}}> 
+            <a
             target="_blank"
             href="https://kidshealth.org/en/parents/otitis-media.html"
           >
-            <Button size="small">Learn More</Button>
+            <Button style={{
+              borderRadius: 10,
+              backgroundColor: "turquoise",
+              color: "white",
+              fontSize: "15px",
+            }}>Learn More</Button> 
+            
           </a>
-        </CardActions>
+          </CardActions>  
       </Card>
       <Grid item container direction="column" display="flex" justify="center">
         <Typography>&nbsp;</Typography>
@@ -91,14 +97,20 @@ export default function EarInfection() {
             to inflamation. 
           </Typography>
         </CardContent>
-        <CardActions>
-          <a
+        <CardActions style={{justifyContent: "center"}}> 
+            <a
             target="_blank"
             href="https://www.keckmedicine.org/how-to-prevent-ear-infections-when-its-cold/"
           >
-            <Button size="small">Learn More</Button>
+            <Button style={{
+              borderRadius: 10,
+              backgroundColor: "turquoise",
+              color: "white",
+              fontSize: "15px",
+            }}>Learn More</Button> 
+            
           </a>
-        </CardActions>
+          </CardActions>  
       </Card>
       <Typography variant="body1"></Typography>
       <Grid item container direction="column" display="flex" justify="center">

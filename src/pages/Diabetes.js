@@ -60,11 +60,20 @@ export default function Diabetes() {
             both cases, insulin would be the treatment
           </Typography>
         </CardContent>
-        <CardActions>
-          <a target="_blank" href="https://kidshealth.org/en/kids/type1.html">
-            <Button size="small">Learn More</Button>
+        <CardActions style={{justifyContent: "center"}}> 
+            <a
+            target="_blank"
+            href="https://kidshealth.org/en/kids/type1.html"
+          >
+            <Button style={{
+              borderRadius: 10,
+              backgroundColor: "turquoise",
+              color: "white",
+              fontSize: "15px",
+            }}>Learn More</Button> 
+            
           </a>
-        </CardActions>
+          </CardActions>   
       </Card>
       <Grid item container direction="column" display="flex" justify="center">
         <Typography>&nbsp;</Typography>
@@ -95,14 +104,20 @@ export default function Diabetes() {
             of using insulin <Emoji symbol="🏋️" />!
           </Typography>
         </CardContent>
-        <CardActions>
-          <a
+        <CardActions style={{justifyContent: "center"}}> 
+            <a
             target="_blank"
             href="https://www.johnmuirhealth.com/health-education/conditions-treatments/diabetes-articles/preventing-diabetes.html"
           >
-            <Button size="small">Learn More</Button>
+            <Button style={{
+              borderRadius: 10,
+              backgroundColor: "turquoise",
+              color: "white",
+              fontSize: "15px",
+            }}>Learn More</Button> 
+            
           </a>
-        </CardActions>
+          </CardActions> 
       </Card>
       <Typography variant="body1"></Typography>
       <Grid item container direction="column" display="flex" justify="center">

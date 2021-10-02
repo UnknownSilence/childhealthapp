@@ -54,10 +54,19 @@ export default function PinkEye() {
             <Emoji symbol="💧"/>.
             </Typography>
           </CardContent>
-          <CardActions>
-            <a target="_blank" href="https://kidshealth.org/en/parents/conjunctivitis.html">
-              <Button size="small">Learn More</Button>
-            </a>
+          <CardActions style={{justifyContent: "center"}}> 
+            <a
+            target="_blank"
+            href="https://kidshealth.org/en/parents/conjunctivitis.html"
+          >
+            <Button style={{
+              borderRadius: 10,
+              backgroundColor: "turquoise",
+              color: "white",
+              fontSize: "15px",
+            }}>Learn More</Button> 
+            
+          </a>
           </CardActions>
         </Card>
 
@@ -88,12 +97,18 @@ export default function PinkEye() {
             It's also best to avoid sharing items like pillowcases and towels with other individuals. 
           </Typography>
         </CardContent>
-        <CardActions>
+        <CardActions style={{justifyContent: "center"}}>
           <a
             target="_blank"
             href="https://www.cdc.gov/conjunctivitis/about/prevention.html"
           >
-            <Button size="small">Learn More</Button>
+            <Button style={{
+              borderRadius: 10,
+              backgroundColor: "turquoise",
+              color: "white",
+              fontSize: "15px",
+            }}>Learn More</Button> 
+            
           </a>
         </CardActions>
       </Card>
