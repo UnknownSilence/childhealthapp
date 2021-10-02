@@ -13,16 +13,16 @@ const Home = () => {
   const history = useHistory();
   const handleSubmit = (e) => {
     e.preventDefault()
-    if(disease == "Influenza" ){
+    if(disease === "Influenza" ){
       history.push("/flu");
     }
-    else if(disease == "Pink Eye"){
+    else if(disease === "Pink Eye"){
       history.push("/pinkeye")
     }
-    else if(disease == "Diabetes"){
+    else if(disease === "Diabetes"){
       history.push("/diabetes")
     }
-    else if(disease == "Ear Infection"){
+    else if(disease === "Ear Infection"){
       history.push("/earinfection")
     }
   }

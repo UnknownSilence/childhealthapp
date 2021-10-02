@@ -4,7 +4,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Influenza from "./components/Influenza";
+import Influenza from "./pages/Influenza";
 import PinkEye from "./pages/PinkEye";
 import Diabetes from "./pages/Diabetes";
 import EarInfection from "./pages/EarInfection";
