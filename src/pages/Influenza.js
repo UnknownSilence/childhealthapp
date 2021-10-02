@@ -78,17 +78,22 @@ export default function Influenza() {
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
           <Typography sx={{ fontSize: 20 }} gutterBottom>
-            <Typography variant="h6"> lorem ipsulum!</Typography>
+            <Typography variant="h6">
+              When having the flu, it is best to stay at home and get plenty of rest 
+              <Emoji symbol="🛏️" />. While you're resting, your body is fighting away 
+              at the virus!
+            </Typography>
             <Typography variant="h6">&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
           </Typography>
           <Typography variant="h6" component="div">
-            Lorem Ipsulum! of using insulin <Emoji symbol="🏋️" />!
+            It is also very important that you drink lots of liquids! <Emoji symbol="💧" />
+            Drinking items like water, juice, and soups helps keep your respitory system hydrated!
           </Typography>
         </CardContent>
         <CardActions>
           <a
             target="_blank"
-            href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/influenza/influenza-flu-in-children#:~:text=Influenza%20(flu)%20is%20a%20very,for%20less%20than%20a%20week."
+            href="https://www.webmd.com/cold-and-flu/coping-with-flu"
           >
             <Button size="small">Learn More</Button>
           </a>
