@@ -1,21 +1,60 @@
 import React from "react";
-import { Grid, Typography, Button } from "@material-ui/core";
+import { Grid, Typography, Button, Item, TextField } from "@material-ui/core";
 import { ReactComponent as Sleeping } from "./SleepPatient.svg";
 //import { Link, BrowserRouter as Router } from "react-router-dom";
+import Autocomplete from "@material-ui/lab/Autocomplete";
+import { ailments } from "./ailmennts";
 
 const Home = () => {
   return (
-    <di>
-      <Grid directioon="column" alignItems="center" justify="center" container>
-        <Sleeping></Sleeping>
+    <div>
+      <Grid container direction="column" item xs={12} align="center">
+        <Grid item container display="flex" justify="center">
+          <Sleeping></Sleeping>
+        </Grid>
+        <Grid item container direction="column" display="flex" justify="center">
+          <Typography>&nbsp;</Typography>
+          <Typography>&nbsp;</Typography>
+          <Typography>&nbsp;</Typography>
+          <Typography>&nbsp;</Typography>
+          <Typography>&nbsp;</Typography>
+          <Typography>&nbsp;</Typography>
+          <Typography>&nbsp;</Typography>
+          <Typography>&nbsp;</Typography>
+        </Grid>
+        <Grid
+          item
+          container
+          direction="row"
+          alignItems="flex-end"
+          justify="center"
+        >
+          <Typography>My ddoctor said I have...</Typography>
+        </Grid>
+        <Grid
+          item
+          container
+          direction="row"
+          alignItems="flex-end"
+          justify="center"
+        >
+          <Autocomplete
+            freeSolo
+            id="free-solo-demo"
+            options={ailments}
+            renderInput={(params) => (
+              <TextField
+                {...params}
+                justify="center"
+                margin="normal"
+                variant="outlined"
+                fullWidth
+              />
+            )}
+          />
+        </Grid>
       </Grid>
-      <Grid container xs={8} spacinng={12}></Grid>
-      <Grid directioon="column" alignItems="center" justify="center" container>
-        <Typography style={{ fontWeight: 600 }} type className="promptText">
-          My Doctor said I have...
-        </Typography>
-      </Grid>
-    </di>
+    </div>
   );
 };
 

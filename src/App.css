@@ -24,6 +24,10 @@
   color: turquoise;
 }
 
+#free-solo-demo {
+  width: 100% !important;
+}
+
 .App-link {
   color: #61dafb;
 }
