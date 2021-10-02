@@ -33,6 +33,7 @@ const Game = () => {
       { name: "Card 2", advg: "Fire", desc: 13000 },
       { name: "Card 3", advg: "Fire", desc: 13000 },
       { name: "Card 4", advg: "Fire", desc: 13000 },
+    
   ]
 
 
@@ -59,6 +60,7 @@ const Game = () => {
             >
                 {data.map(elem => (
                     <Grid item xs={3} sm={3} md={3} key={data.indexOf(elem)}>
+                      <Button>
                         <Card>
                             <CardHeader
                                 title={`name : ${elem.name}`}
@@ -81,6 +83,7 @@ const Game = () => {
                                </Grid>
                             </CardContent>
                         </Card>
+                        </Button>
                      </Grid>
                 ))}
             </Grid>
