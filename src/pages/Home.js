@@ -4,8 +4,28 @@ import { ReactComponent as Sleeping } from "./SleepPatient.svg";
 //import { Link, BrowserRouter as Router } from "react-router-dom";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import { ailments } from "./ailmennts";
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
+
 
 const Home = () => {
+  const [disease, setdisease] = useState("");
+  const history = useHistory();
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    if(disease == "Influenza" ){
+      history.push("/flu");
+    }
+    else if(disease == "Pink Eye"){
+      history.push("/pinkeye")
+    }
+    else if(disease == "Diabetes"){
+      history.push("/diabetes")
+    }
+    else if(disease == "Ear Infection"){
+      history.push("/earinfection")
+    }
+  }
   return (
     <div>
       <Grid container direction="column" item xs={12} align="center">
@@ -29,7 +49,7 @@ const Home = () => {
           alignItems="flex-end"
           justify="center"
         >
-          <Typography>My ddoctor said I have...</Typography>
+          <Typography>My doctor said I have...</Typography>
         </Grid>
         <Grid
           item
@@ -42,6 +62,7 @@ const Home = () => {
             freeSolo
             id="free-solo-demo"
             options={ailments}
+            onChange={(e, value) => setdisease(value)}
             renderInput={(params) => (
               <TextField
                 {...params}
@@ -49,9 +70,11 @@ const Home = () => {
                 margin="normal"
                 variant="outlined"
                 fullWidth
+                onChange={(e) => setdisease(e.target.value)}
               />
             )}
           />
+          <Button variant="outline" onClick={handleSubmit}>Submit</Button>
         </Grid>
       </Grid>
     </div>

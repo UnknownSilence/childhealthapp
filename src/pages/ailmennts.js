@@ -1,1 +1,1 @@
-export const ailments = ["Diabetes", "Influenza", "Ear Infectiomn", "Pink Eye"];
+export const ailments = ["Diabetes", "Influenza", "Ear Infection", "Pink Eye"];
