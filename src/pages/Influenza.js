@@ -32,16 +32,7 @@ export default function Influenza() {
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
           <Typography sx={{ fontSize: 20 }} gutterBottom>
-            <Typography
-              style={{
-                borderRadius: 35,
-                color: "#009999",
-                padding: "18px 36px",
-                fontSize: "18px",
-              }}
-              var
-              variant="h6"
-            >
+            <Typography variant="h6">
               {" "}
               Influenza, also known as the flu, is a virus <Emoji symbol="🦠" />{" "}
               that cause harm to your body. It's caused by germs that enter your
@@ -87,26 +78,17 @@ export default function Influenza() {
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
           <Typography sx={{ fontSize: 20 }} gutterBottom>
-            <Typography variant="h6">
-              When having the flu, it is best to stay at home and get plenty of rest 
-              <Emoji symbol="🛏️" />. While you're resting, your body is fighting away 
-              at the virus!
-            </Typography>
+            <Typography variant="h6"> lorem ipsulum!</Typography>
             <Typography variant="h6">&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
           </Typography>
           <Typography variant="h6" component="div">
-            It is also very important that you drink lots of liquids! <Emoji symbol="💧" />
-            Drinking items like water, juice, and soups helps keep your respitory system hydrated!
+            Lorem Ipsulum! of using insulin <Emoji symbol="🏋️" />!
           </Typography>
         </CardContent>
         <CardActions>
           <a
             target="_blank"
-<<<<<<< HEAD
-            href="https://www.johnmuirhealth.com/health-education/conditions-treatments/diabetes-articles/preventing-diabetes.html"
-=======
-            href="https://www.webmd.com/cold-and-flu/coping-with-flu"
->>>>>>> fa5da1a6ae9529377977133145d36b54bc2bd31d
+            href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/influenza/influenza-flu-in-children#:~:text=Influenza%20(flu)%20is%20a%20very,for%20less%20than%20a%20week."
           >
             <Button size="small">Learn More</Button>
           </a>
