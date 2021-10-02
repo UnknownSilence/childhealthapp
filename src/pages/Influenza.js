@@ -5,11 +5,14 @@ import {
   CardContent,
   CardActions,
   Button,
+  Box,
 } from "@material-ui/core";
 import React from "react";
 import Emoji from "../components/Emoji";
+import { Link } from "react-router-dom";
 import { ReactComponent as FluImg } from "./flu.svg";
 import { ReactComponent as VacPic } from "./vaccPic.svg";
+import VideogameAssetIcon from "@material-ui/icons/VideogameAsset";
 
 export default function Influenza() {
   return (
@@ -95,6 +98,49 @@ export default function Influenza() {
         </CardActions>
       </Card>
       <Typography variant="body1"></Typography>
+      <Grid item container direction="column" display="flex" justify="center">
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+      </Grid>
+      <Grid item container display="flex" justify="center">
+        <Typography variant="h3">Let's apply it!</Typography>
+      </Grid>
+      <Grid item container direction="column" display="flex" justify="center">
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+      </Grid>
+
+      <Box m={5} pt={0}>
+        <Link to="/game">
+          <Button
+            style={{
+              borderRadius: 35,
+              backgroundColor: "turquoise",
+              color: "white",
+              padding: "50px 50px",
+              fontSize: "23px",
+            }}
+            variant="contained"
+            endIcon={<VideogameAssetIcon />}
+          >
+            Play Doctor!
+          </Button>
+        </Link>
+      </Box>
+
+      <Grid item container direction="column" display="flex" justify="center">
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+        <Typography>&nbsp;</Typography>
+      </Grid>
     </Grid>
   );
 }
