@@ -11,7 +11,15 @@ body {
 
 
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#symptoms {
+  position: absolute !important;
+  margin-left: 50%;
+  margin-top: 0.5%;
 }
