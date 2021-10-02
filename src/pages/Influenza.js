@@ -81,17 +81,21 @@ export default function Influenza() {
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
           <Typography sx={{ fontSize: 20 }} gutterBottom>
-            <Typography variant="h6"> lorem ipsulum!</Typography>
+            <Typography variant="h6">
+               The best way to ease symptoms of the flu is to stay home and rest <Emoji symbol="🛏️" />.
+               This will allow your body to fight the virus!  
+            </Typography>
             <Typography variant="h6">&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
           </Typography>
           <Typography variant="h6" component="div">
-            Lorem Ipsulum! of using insulin <Emoji symbol="🏋️" />!
+            It also helps to drink lots of fluids. Drinking items such as water, juice, and 
+            soup will help the body stay hydrated, which will better help it fight the illness. 
           </Typography>
         </CardContent>
         <CardActions>
           <a
             target="_blank"
-            href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/influenza/influenza-flu-in-children#:~:text=Influenza%20(flu)%20is%20a%20very,for%20less%20than%20a%20week."
+            href="https://www.webmd.com/cold-and-flu/coping-with-flu"
           >
             <Button size="small">Learn More</Button>
           </a>
