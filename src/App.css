@@ -13,6 +13,10 @@
   }
 }
 
+.homeBtn {
+  background-color: turquoise;
+}
+
 .App-header {
   background-color: whitesmoke;
   min-height: 100vh;
@@ -31,9 +35,9 @@
 .App-link {
   color: #61dafb;
 }
-
-.promptText {
+#promptText {
   font-style: bold;
+  font-size: xx-large;
 }
 
 @keyframes App-logo-spin {
