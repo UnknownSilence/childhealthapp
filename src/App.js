@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-//import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
@@ -9,6 +9,7 @@ import PinkEye from "./pages/PinkEye";
 import Diabetes from "./pages/Diabetes";
 import EarInfection from "./pages/EarInfection";
 import Game from "./pages/Game";
+
 
 function App() {
   return (
