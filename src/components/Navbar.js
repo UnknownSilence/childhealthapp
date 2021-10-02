@@ -1,6 +1,6 @@
-import React from "react";
+/**import React from "react";
 import { AppBar, Toolbar, IconButton, Typography } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+//import { makeStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import { Link, BrowserRouter as Router } from "react-router-dom";
 const Navbar = () => {
@@ -39,10 +39,11 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
-  link: {
-    color: "white",
+  Button: {
+    color: "turquoise",
     textDecoration: "none",
   },
 }));
 
 export default Navbar;
+**/
