@@ -91,7 +91,7 @@ export default function EarInfection() {
         <CardActions>
           <a
             target="_blank"
-            href="https://kidshealth.org/en/parents/otitis-media.html"
+            href="https://www.keckmedicine.org/how-to-prevent-ear-infections-when-its-cold/"
           >
             <Button size="small">Learn More</Button>
           </a>
