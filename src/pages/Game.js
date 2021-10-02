@@ -47,20 +47,21 @@ const Game = () => {
 
       <Box id="symptoms" variant="contained" m={10} pt={5}>
                         <Card spacing={15}>
-                            <CardHeader
-                                title="Doctor's Diagnosis"
+                            <CardHeader id="docDiag"
+                                title = "Doctor's Diagnosis"
                                                              
                             >
+                              
                               
                             </CardHeader>
                   
                             <CardContent>
                             <CardMedia>
-                              <img src="https://i.imgur.com/3grc0Gz.png"/>
+                              <img id="targetElement" src="https://i.imgur.com/3grc0Gz.png"/>
                                 </CardMedia>
                               
-                                <Typography variant="h5" gutterBottom>
-                                    Alan seems to have a runnny nose, sore thrat, and feels tired and cold.
+                                <Typography variant="h6" gutterBottom>
+                                    Alan seems to have a runnny nose, sore throat, and feels tired and cold.
                                 </Typography>
                                 <Grid item container direction="column" display="flex" justify="center">
                                   <Typography>&nbsp;</Typography>
@@ -74,6 +75,10 @@ const Game = () => {
                                </Grid>
                             </CardContent>
                         </Card>
+      </Box>
+
+      <Box variant="contained" m={1} pt={1}>
+        <Typography variant="h2">Alan is sick!</Typography>
       </Box>
 
 
