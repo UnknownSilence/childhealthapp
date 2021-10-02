@@ -75,11 +75,17 @@ export default function EarInfection() {
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
           <Typography sx={{ fontSize: 20 }} gutterBottom>
-            <Typography variant="h6"> lorem ipsulum!</Typography>
+            <Typography variant="h6">
+              To prevent getting ear infections, it's best to exercise proper hygiene. 
+              Keep your ears clean and dry; after showering, wipe them dry with your finger
+              and a tissue.  
+              </Typography>
             <Typography variant="h6">&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
           </Typography>
           <Typography variant="h6" component="div">
-            Lorem Ipsulum! of using insulin <Emoji symbol="🏋️" />!
+            It's also best to avoid smoking! 
+            <Emoji symbol="🚭" /> Even secondhand smoke can irritate your tubes and lead
+            to inflamation. 
           </Typography>
         </CardContent>
         <CardActions>
