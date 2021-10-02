@@ -5,7 +5,6 @@ import {
   Card,
   CardContent,
   CardActions,
-  Link,
 } from "@material-ui/core";
 import React from "react";
 import Emoji from "../components/Emoji";
@@ -16,7 +15,7 @@ import { ReactComponent as SugarPic } from "./sugar.svg";
 export default function Diabetes() {
   return (
     <Grid>
-      <Typography variant="h3"> Diabetes</Typography>
+      <Typography variant="h1">Diabetes</Typography>
       <Grid item container direction="column" display="flex" justify="center">
         <Typography>&nbsp;</Typography>
         <Typography>&nbsp;</Typography>
