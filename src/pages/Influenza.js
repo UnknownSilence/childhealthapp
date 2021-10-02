@@ -9,7 +9,7 @@ import {
 import React from "react";
 import Emoji from "../components/Emoji";
 import { ReactComponent as FluImg } from "./flu.svg";
-import { ReactComponent as SugarPic } from "./sugar.svg";
+import { ReactComponent as VacPic } from "./vaccPic.svg";
 
 export default function Influenza() {
   return (
@@ -35,11 +35,11 @@ export default function Influenza() {
             <Typography variant="h6">
               {" "}
               Influenza, also known as the flu, is a virus <Emoji symbol="🦠" />{" "}
-              that cause harm to your body. They are caused by germs that enter
-              your body through your nose, throat, and lungs. They can cause you
-              to start coughing, sneezing, and having a sore throat. Anyone at
-              any age <Emoji symbol="👨‍👩‍👦‍👦" /> can get the influenza, and while the
-              most dangerous ones can kill , those outbreaks do not happen very
+              that cause harm to your body. It's caused by germs that enter your
+              body through your nose, throat, and lungs. It can cause you to
+              start coughing, sneezing, and having a sore throat. Anyone at any
+              age <Emoji symbol="👨‍👩‍👦‍👦" /> can get the influenza, and while the
+              most dangerous ones can kill, those outbreaks do not happen very
               often.
             </Typography>
             <Typography variant="h6">&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
@@ -54,7 +54,10 @@ export default function Influenza() {
           <Typography variant="h6">&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
         </CardContent>
         <CardActions>
-          <a target="_blank" href="https://kidshealth.org/en/kids/type1.html">
+          <a
+            target="_blank"
+            href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/influenza/influenza-flu-in-children#:~:text=Influenza%20(flu)%20is%20a%20very,for%20less%20than%20a%20week."
+          >
             <Button size="small">Learn More</Button>
           </a>
         </CardActions>
@@ -65,7 +68,7 @@ export default function Influenza() {
         <Typography>&nbsp;</Typography>
       </Grid>
       <Grid item container display="flex" justify="center">
-        <SugarPic></SugarPic>
+        <VacPic></VacPic>
       </Grid>
       <Grid item container direction="column" display="flex" justify="center">
         <Typography>&nbsp;</Typography>
@@ -75,23 +78,17 @@ export default function Influenza() {
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
           <Typography sx={{ fontSize: 20 }} gutterBottom>
-            <Typography variant="h6">
-              {" "}
-              To prevent diabetes, it's best to consume a balanced nutritional
-              diet and exercise reguarly!
-            </Typography>
+            <Typography variant="h6"> lorem ipsulum!</Typography>
             <Typography variant="h6">&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
           </Typography>
           <Typography variant="h6" component="div">
-            Doctors say exercising for atleast 30 minutes a day, five days a
-            week is the day best way to ensure your body is healthy andd capable
-            of using insulin <Emoji symbol="🏋️" />!
+            Lorem Ipsulum! of using insulin <Emoji symbol="🏋️" />!
           </Typography>
         </CardContent>
         <CardActions>
           <a
             target="_blank"
-            href="https://www.johnmuirhealth.com/health-education/conditions-treatments/diabetes-articles/preventing-diabetes.html"
+            href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/influenza/influenza-flu-in-children#:~:text=Influenza%20(flu)%20is%20a%20very,for%20less%20than%20a%20week."
           >
             <Button size="small">Learn More</Button>
           </a>
