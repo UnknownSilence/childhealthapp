@@ -32,7 +32,16 @@ export default function Influenza() {
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
           <Typography sx={{ fontSize: 20 }} gutterBottom>
-            <Typography variant="h6">
+            <Typography
+              style={{
+                borderRadius: 35,
+                color: "#009999",
+                padding: "18px 36px",
+                fontSize: "18px",
+              }}
+              var
+              variant="h6"
+            >
               {" "}
               Influenza, also known as the flu, is a virus <Emoji symbol="🦠" />{" "}
               that cause harm to your body. It's caused by germs that enter your
@@ -88,7 +97,7 @@ export default function Influenza() {
         <CardActions>
           <a
             target="_blank"
-            href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/influenza/influenza-flu-in-children#:~:text=Influenza%20(flu)%20is%20a%20very,for%20less%20than%20a%20week."
+            href="https://www.johnmuirhealth.com/health-education/conditions-treatments/diabetes-articles/preventing-diabetes.html"
           >
             <Button size="small">Learn More</Button>
           </a>

@@ -8,6 +8,8 @@ import Influenza from "./pages/Influenza";
 import PinkEye from "./pages/PinkEye";
 import Diabetes from "./pages/Diabetes";
 import EarInfection from "./pages/EarInfection";
+import Game from "./pages/Game";
+
 function App() {
   return (
     <Router>
@@ -17,8 +19,8 @@ function App() {
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/users">
-              <Users />
+            <Route path="/game">
+              <Game />
             </Route>
             <Route path="/flu">
               <Influenza />
@@ -40,10 +42,6 @@ function App() {
       </div>
     </Router>
   );
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
 
 export default App;

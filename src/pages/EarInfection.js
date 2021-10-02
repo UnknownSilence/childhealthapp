@@ -5,11 +5,14 @@ import {
   CardContent,
   CardActions,
   Button,
+  Box,
 } from "@material-ui/core";
 import React from "react";
+import { Link } from "react-router-dom";
 import Emoji from "../components/Emoji";
 import { ReactComponent as EarPic } from "./earPic.svg";
 import { ReactComponent as SwimPic } from "./swimmer.svg";
+import VideogameAssetIcon from "@material-ui/icons/VideogameAsset";
 
 export default function EarInfection() {
   return (
@@ -105,6 +108,24 @@ export default function EarInfection() {
         <Typography>&nbsp;</Typography>
         <Typography>&nbsp;</Typography>
       </Grid>
+
+      <Box m={5} pt={0}>
+        <Link to="/game">
+          <Button
+            style={{
+              borderRadius: 35,
+              backgroundColor: "turquoise",
+              color: "white",
+              padding: "50px 50px",
+              fontSize: "23px",
+            }}
+            variant="contained"
+            endIcon={<VideogameAssetIcon />}
+          >
+            Play Doctor!
+          </Button>
+        </Link>
+      </Box>
 
       <Grid item container direction="column" display="flex" justify="center">
         <Typography>&nbsp;</Typography>
