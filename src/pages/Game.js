@@ -15,9 +15,6 @@ import {
 
 
 import { makeStyles } from '@material-ui/core/styles'
-import VideogameAssetIcon from "@material-ui/icons/VideogameAsset";
-
-import { ReactComponent as NurseGirl } from "./nurseIcon.svg";
 import { ReactComponent as DocOffice } from "./docOffice.svg";
 import CoughMedicine from "../components/CoughMedicineCard";
 import EyeDrops from "../components/EyeDropsCard";
@@ -26,8 +23,8 @@ import Insulin from "../components/InsulinCard";
 
 const useStyles = makeStyles(theme => ({
   root: {
-      flexGrow: 1,
-      padding: theme.spacing(1)
+    flexGrow: 1,
+    padding: theme.spacing(1)
   }
 }))
 
@@ -49,15 +46,15 @@ const Game = () => {
 
   const [win, setWin] = useState(false);
   const classes = useStyles()
-  let cm_desc = "If one of your symptoms is a non-stop cough where you cough all the time, cough medicine will help give you a "+
-  "break from coughing.";
-  let p_desc = "Penicillin was the first antibiotic that doctors used. They saved millions of lives." + 
-  " They are effective to diseases that are found in the throat or lungs.";
+  let cm_desc = "If one of your symptoms is a non-stop cough where you cough all the time, cough medicine will help give you a " +
+    "break from coughing.";
+  let p_desc = "Penicillin was the first antibiotic that doctors used. They saved millions of lives." +
+    " They are effective to diseases that are found in the throat or lungs.";
   let ed_desc = "Eye drops keep your eye wet. If one or both of your eyes ever feel dry or itchy, apply eyedrops.";
   let i_desc = "insulin is used to control blood sugar in people who have type 1 diabetes" +
-  "(condition in which the body does not make insulin and therefore cannot control the amount of sugar in the blood)" +
-  "or in people who have type 2 diabetes (condition in which the blood sugar is too high because the body does not " +
-  "produce or use insulin normally) that cannot be controlled with oral medications alone.";
+    "(condition in which the body does not make insulin and therefore cannot control the amount of sugar in the blood)" +
+    "or in people who have type 2 diabetes (condition in which the blood sugar is too high because the body does not " +
+    "produce or use insulin normally) that cannot be controlled with oral medications alone.";
   const data = [
     { name: "Cough medicine", advg: "flu, bronchitis, pneumonia", desc: cm_desc },
     { name: "Penicillin", advg: "pneuomina, scarlet fever, strep throat, syphillis, gonorrhea", desc: p_desc },
@@ -67,67 +64,61 @@ const Game = () => {
   ]
 
   const clicked = (e) => {
-    if(e === data[0].name)
-    {
-      let medicine = new CoughMedicine();
-      setWin(medicine.include(e));
+    if (e == data[0].name) {
+      const medicine = new CoughMedicine();
+      console.log(win);
+      setWin(medicine.include("flu"));
+      setTimeout(() => setWin(false), 100);
+      console.log(win);
     }
-    else if (e === data[1].name)
-    {
-      let medicine = new Penicillin();
-      setWin(medicine.include(e));
+    else if (e === data[1].name) {
+      const medicine = new Penicillin();
+      setWin(medicine.include("flu"));
       console.log("wrong");
     }
-    else if (e === data[2].name)
-    {
-      let medicine = new EyeDrops();
-      setWin(medicine.include(e));
+    else if (e === data[2].name) {
+      const medicine = new EyeDrops();
+      setWin(medicine.include("flu"));
       console.log("wrong");
     }
-    else
-    {
-      let medicine = new Insulin();
-      setWin(medicine.include(e));
+    else {
+      const medicine = new Insulin();
+      setWin(medicine.include("flu"));
       console.log("wrong");
     }
   }
 
   return (
 
-
-    
     <Grid>
-
       <Box id="symptoms" variant="contained" m={10} pt={5}>
-                        <Card spacing={15}>
-                            <CardHeader id="docDiag"
-                                title = "Doctor's Diagnosis"
-                                                             
-                            >
-                              
-                              
-                            </CardHeader>
-                  
-                            <CardContent>
-                            <CardMedia>
-                              <img id="targetElement" src="https://i.imgur.com/3grc0Gz.png"/>
-                                </CardMedia>
-                              
-                                <Typography variant="h6" gutterBottom>
-                                    Alan seems to have a runnny nose, sore throat, and feels tired and cold.
-                                </Typography>
-                                <Grid item container direction="column" display="flex" justify="center">
-                                  <Typography>&nbsp;</Typography>
-                                  <Typography>&nbsp;</Typography>
-                                  <Typography>&nbsp;</Typography>
-                                  <Grid item container direction="column" display="flex" justify="center">
-                                  <Typography>&nbsp;</Typography>
-                                  <Typography>&nbsp;</Typography>
-                                  <Typography>&nbsp;</Typography>
-                                </Grid>
-                               </Grid>
-                            </CardContent>
-                        </Card>
+        <Confetti active={win} config={config} />
+        <Card spacing={15}>
+          <CardHeader id="docDiag"
+            title="Doctor's Diagnosis"
+          >
+          </CardHeader>
+
+          <CardContent>
+            <CardMedia>
+              <img id="targetElement" src="https://i.imgur.com/3grc0Gz.png" />
+            </CardMedia>
+
+            <Typography variant="h6" gutterBottom>
+              Alan seems to have a runnny nose, sore throat, and feels tired and cold.
+            </Typography>
+            <Grid item container direction="column" display="flex" justify="center">
+              <Typography>&nbsp;</Typography>
+              <Typography>&nbsp;</Typography>
+              <Typography>&nbsp;</Typography>
+              <Grid item container direction="column" display="flex" justify="center">
+                <Typography>&nbsp;</Typography>
+                <Typography>&nbsp;</Typography>
+                <Typography>&nbsp;</Typography>
+              </Grid>
+            </Grid>
+          </CardContent>
+        </Card>
       </Box>
 
       <Box variant="contained" m={1} pt={1}>
@@ -142,9 +133,9 @@ const Game = () => {
 
 
       <Grid item container direction="column" display="flex" justify="center">
-      <Box variant="contained" m={1} pt={1}>
-        <Typography variant="h6">What is the best treatment?</Typography>
-      </Box>
+        <Box variant="contained" m={1} pt={1}>
+          <Typography variant="h6">What is the best treatment?</Typography>
+        </Box>
       </Grid>
 
       <div className={classes.root}>
@@ -158,6 +149,8 @@ const Game = () => {
           {data.map(elem => (
             <Grid item xs={3} sm={3} md={3} key={data.indexOf(elem)}>
               <Button onClick={() => clicked(`${elem.name}`)}>
+                <Confetti active={win} config={config} />
+
                 <Card >
                   <CardHeader
                     title={`name : ${elem.name}`}
@@ -165,9 +158,6 @@ const Game = () => {
                   />
                   <CardContent>
                     {`desc : ${elem.desc}`}
-                    <Typography variant="h5" gutterBottom>
-                      Hello World
-                    </Typography>
                     <Grid item container direction="column" display="flex" justify="center">
                       <Typography>&nbsp;</Typography>
                       <Typography>&nbsp;</Typography>
