@@ -46,20 +46,16 @@ const Game = () => {
 
   const [win, setWin] = useState(false);
   const classes = useStyles()
-  let cm_desc = "If one of your symptoms is a non-stop cough where you cough all the time, cough medicine will help give you a " +
-    "break from coughing.";
-  let p_desc = "Penicillin was the first antibiotic that doctors used. They saved millions of lives." +
-    " They are effective to diseases that are found in the throat or lungs.";
+  let cm_desc = "Cough medicine will help ease non-stop coughs. Common treatment for the flu.";
+  let p_desc = "They are effective to diseases that are found in the throat or lungs.";
   let ed_desc = "Eye drops keep your eye wet. If one or both of your eyes ever feel dry or itchy, apply eyedrops.";
-  let i_desc = "insulin is used to control blood sugar in people who have type 1 diabetes" +
-    "(condition in which the body does not make insulin and therefore cannot control the amount of sugar in the blood)" +
-    "or in people who have type 2 diabetes (condition in which the blood sugar is too high because the body does not " +
-    "produce or use insulin normally) that cannot be controlled with oral medications alone.";
+  let i_desc = "insulin is used to control blood sugar in people who have type 1 diabetes or " + 
+            "type 2 diabetes that cannot be controlled with oral medications alone.";
   const data = [
-    { name: "Cough medicine", advg: "flu, bronchitis, pneumonia", desc: cm_desc },
-    { name: "Penicillin", advg: "pneuomina, scarlet fever, strep throat, syphillis, gonorrhea", desc: p_desc },
-    { name: "Eye drops", advg: "pink eye, allergies", desc: ed_desc },
-    { name: "Insulin", advg: "type 1 diabetes, type 2 diabetes", desc: i_desc },
+    { name: "Cough medicine", advg: "flu, bronchitis, pneumonia", desc: cm_desc, link: "https://i.imgur.com/ptNQLUj.png" },
+    { name: "Penicillin", advg: "pneuomina, scarlet fever, strep throat, syphillis, gonorrhea", desc: p_desc, link: "https://i.imgur.com/TMGBmel.png" },
+    { name: "Eye drops", advg: "pink eye, allergies", desc: ed_desc, link: "https://i.imgur.com/XHJdz8q.png" },
+    { name: "Insulin", advg: "type 1 diabetes, type 2 diabetes", desc: i_desc, link: "https://i.imgur.com/yFRMHOu.png" },
 
   ]
 
@@ -75,6 +71,8 @@ const Game = () => {
       const medicine = new Penicillin();
       setWin(medicine.include("flu"));
       console.log("wrong");
+      
+    
     }
     else if (e === data[2].name) {
       const medicine = new EyeDrops();
@@ -153,18 +151,17 @@ const Game = () => {
 
                 <Card >
                   <CardHeader
-                    title={`name : ${elem.name}`}
-                    subheader={`advg : ${elem.advg}`}
+                    title={`${elem.name}`}
+                    subheader={`Super effective against: ${elem.advg}`}
                   />
+                  <CardMedia>
+              <img id="targetElement" src={`${elem.link}`} />
+            </CardMedia>
                   <CardContent>
-                    {`desc : ${elem.desc}`}
+                    {`${elem.desc}`}
                     <Grid item container direction="column" display="flex" justify="center">
                       <Typography>&nbsp;</Typography>
-                      <Typography>&nbsp;</Typography>
-                      <Typography>&nbsp;</Typography>
                       <Grid item container direction="column" display="flex" justify="center">
-                        <Typography>&nbsp;</Typography>
-                        <Typography>&nbsp;</Typography>
                         <Typography>&nbsp;</Typography>
                       </Grid>
                     </Grid>

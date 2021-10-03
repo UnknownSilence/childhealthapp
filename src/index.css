@@ -9,10 +9,6 @@ body {
   color: #009999;
 }
 
-
-
-
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -20,6 +16,7 @@ code {
 
 #symptoms {
   position: absolute !important;
-  margin-left: 50%;
+  margin-left: 70%;
   margin-top: 0.5%;
+  width: 25%;
 }

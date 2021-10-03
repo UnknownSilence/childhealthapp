@@ -24,6 +24,10 @@
   animation: yourAnimation 10s ease-in-out 2s infinite normal none;
 }
 
+.WrongAnsswer {
+  animation: yourAnimation 5s ease-in-out 2s infinite normal none;
+}
+
 #targetElement {
   color: var(--text);
   border-radius: 50%;
