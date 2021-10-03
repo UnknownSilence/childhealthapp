@@ -14,12 +14,14 @@ import {
 
 
 
+
 import { makeStyles } from '@material-ui/core/styles'
 import { ReactComponent as DocOffice } from "./docOffice.svg";
 import CoughMedicine from "../components/CoughMedicineCard";
 import EyeDrops from "../components/EyeDropsCard";
 import Penicillin from "../components/PenicillinCard";
 import Insulin from "../components/InsulinCard";
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -66,11 +68,13 @@ const Game = () => {
       setWin(medicine.include("flu"));
       setTimeout(() => setWin(false), 100);
       console.log(win);
+      
     }
     else if (e === data[1].name) {
       const medicine = new Penicillin();
       setWin(medicine.include("flu"));
       console.log("wrong");
+      
       
     
     }
@@ -120,7 +124,7 @@ const Game = () => {
       </Box>
 
       <Box variant="contained" m={1} pt={1}>
-        <Typography variant="h2">Alan is sick!</Typography>
+        <Typography id="alantext" variant="h2"><span id='alan'>Alan is sick!</span></Typography>
       </Box>
 
 

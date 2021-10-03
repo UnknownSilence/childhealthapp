@@ -20,12 +20,29 @@
   }
 }
 
+@keyframes turnRed {
+  0.0% {
+  }
+  49.6% {
+    background: red;
+  }
+}
+
+.MuiTypography-h2 {
+  color: "#26867c" !important;
+}
+
+#alan {
+  font-weight: bolder !important;
+  color: "#26867c" !important;
+}
+
 #targetElement {
   animation: yourAnimation 10s ease-in-out 2s infinite normal none;
 }
 
 .WrongAnsswer {
-  animation: yourAnimation 5s ease-in-out 2s infinite normal none;
+  animation: turnRed 5s ease-in-out 1s infinite normal none;
 }
 
 #targetElement {
