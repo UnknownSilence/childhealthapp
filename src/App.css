@@ -24,8 +24,8 @@
   animation: yourAnimation 10s ease-in-out 2s infinite normal none;
 }
 
-.WrongAnsswer {
-  animation: yourAnimation 5s ease-in-out 2s infinite normal none;
+.WrongAnswer {
+  animation: yourAnimation 5s ease-in-out 2s normal none;
 }
 
 #targetElement {

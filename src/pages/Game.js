@@ -45,6 +45,7 @@ const Game = () => {
   };
 
   const [win, setWin] = useState(false);
+  const [wrong, setWrong] = useState(false);
   const classes = useStyles()
   let cm_desc = "Cough medicine will help ease non-stop coughs. Common treatment for the flu.";
   let p_desc = "They are effective to diseases that are found in the throat or lungs.";
@@ -55,7 +56,7 @@ const Game = () => {
     { name: "Cough medicine", advg: "flu, bronchitis, pneumonia", desc: cm_desc, link: "https://i.imgur.com/ptNQLUj.png" },
     { name: "Penicillin", advg: "pneuomina, scarlet fever, strep throat, syphillis, gonorrhea", desc: p_desc, link: "https://i.imgur.com/TMGBmel.png" },
     { name: "Eye drops", advg: "pink eye, allergies", desc: ed_desc, link: "https://i.imgur.com/XHJdz8q.png" },
-    { name: "Insulin", advg: "type 1 diabetes, type 2 diabetes", desc: i_desc, link: "https://i.imgur.com/yFRMHOu.png" },
+    { name: "Insulin", advg: "type 1 diabetes, type 2 diabetes", desc: i_desc, link: "https://i.imgur.com/yFRMHOu.png"},
 
   ]
 
@@ -70,6 +71,8 @@ const Game = () => {
     else if (e === data[1].name) {
       const medicine = new Penicillin();
       setWin(medicine.include("flu"));
+      setWrong(true);
+      setTimeout(() => setWrong(false), 30000);
       console.log("wrong");
       
     
@@ -77,11 +80,15 @@ const Game = () => {
     else if (e === data[2].name) {
       const medicine = new EyeDrops();
       setWin(medicine.include("flu"));
+      setWrong(true);
+      setTimeout(() => setWrong(false), 30000);
       console.log("wrong");
     }
     else {
       const medicine = new Insulin();
       setWin(medicine.include("flu"));
+      setWrong(true);
+      setTimeout(() => setWrong(false), 30000);
       console.log("wrong");
     }
   }
@@ -89,7 +96,7 @@ const Game = () => {
   return (
 
     <Grid>
-      <Box id="symptoms" variant="contained" m={10} pt={5}>
+      <Box id="symptoms" className={wrong ? "WrongAnswer":""}variant="contained" m={10} pt={5}>
         <Confetti active={win} config={config} />
         <Card spacing={15}>
           <CardHeader id="docDiag"
