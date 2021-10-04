@@ -20,11 +20,18 @@
   }
 }
 
-@keyframes turnRed {
+@keyframes turnWrong {
   0.0% {
   }
-  49.6% {
+  100% {
+  }
+  32.5% {
     background: red;
+    transform: translate(-50px);
+  }
+  66.1% {
+    background: red;
+    transform: translate(50px);
   }
 }
 
@@ -41,8 +48,8 @@
   animation: yourAnimation 10s ease-in-out 2s infinite normal none;
 }
 
-.WrongAnsswer {
-  animation: turnRed 5s ease-in-out 1s infinite normal none;
+.WrongAnswer {
+  animation: turnWrong 1.5s ease 0s 1 normal none;
 }
 
 #targetElement {
